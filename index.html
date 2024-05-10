@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitDetective</title>
+    <link rel="shortcut icon" href="./assets/android-chrome-512x512.png" type="image/x-icon" sizes="512x512">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <div class="container">
+
+            <div class="header">
+                <h1 class="title">GitDetective</h1>
+                <div id="btn-mode">
+                    <p id="mode-text">Dark</p>
+                    <div class="icon-container">
+                        <img id="mode-icon" src="./assets/images/moon-icon.svg" alt="">
+                    </div>
+                </div>                
+            </div>
+    
+            <div class="input-container">
+                <img src="./assets/images/search-icon.svg" alt="">
+                <div class="searchbar-container">
+                    <input type="search" id="input" placeholder="Enter a GitHub username..." required>
+                    <span class="error">
+                        <p>no search results</p>
+                    </span>
+                    <button class="btn-search" id="submit">
+                        Search
+                    </button>
+                </div>
+            </div>
+
+            
+            <div class="profile-container">
+
+                <img class="avatar" >
+               
+                <div class="profile-content">
+
+                    <div class="name-container">
+                        <h2 id="name"></h2>
+                        <p id="date"></p>
+                    </div>
+
+                    <a href="#" target="_blank" id="user"></a>
+
+                    <p class="bio"></p>
+
+                    <div class="profile-stats-container">
+                        <div class="profile-stat">
+                            <p class="stat-title">Repos</p>
+                            <p id="repos" class="stat-value"></p>
+                        </div>
+                        <div class="profile-stat">
+                            <p class="stat-title">Followers</p>
+                            <p id="followers" class="stat-value"></p>
+                        </div>
+                        <div class="profile-stat">
+                            <p class="stat-title">Following</p>
+                            <p id="following" class="stat-value"></p>
+                        </div>
+                    </div>
+
+                    <div class="profile-bottom-container">
+                        
+                         <div class="profile-info">
+                            <div class="icon"><img src="./assets/images/location-icon.svg" alt="" ></div>
+                            <p id="location"></p>
+                         </div>
+                         <div class="profile-info">
+                            <div class="icon"><img src="./assets/images/website-icon.svg" alt="" ></div>
+                            <a href="#" id="page"></a>
+                         </div>
+                         <div class="profile-info">
+                            <div class="icon"><img src="./assets/images/twitter-icon.svg" alt="" ></div>
+                            <a href="#" id="twitter"></a>
+                         </div>
+                         <div class="profile-info">
+                            <div class="icon"><img src="./assets/images/company-icon.svg" alt="" ></div>
+                            <a href="#" id="company"></a>
+                         </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

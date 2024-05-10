@@ -1,0 +1,242 @@
+:root {
+    --lm-bg: #f6f8ff;
+    --lm-bg-content: #fefefe;
+    --lm-text: #4b6a9b;
+    --lm-text-alt: #2b3442;
+    --lm-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+    --lm-shadow-inactive: 0px 16px 30px -10px rgba(0, 0, 0, 0.2);
+    --lm-icon-bg: brightness(100%);
+    /* Btn */
+    --btn: #0079ff;
+    --btn-hover: #60abff;
+}
+
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Mono", monospace;
+}
+
+.wrapper{
+    background-color: var(--lm-bg);
+    font-size: 13px;
+    color: var(--lm-text);
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    width: 720px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.header{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#btn-mode {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90px;
+    letter-spacing: 2.5px;
+    color: var(--lm-text);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.input-container{
+    background-color: var(--lm-bg-content);
+    border-radius: 15px;
+    box-shadow: var(--lm-shadow);
+    display: flex;
+    height: 100%;
+    padding: 10px;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+
+.searchbar-container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#input{
+    border: none;
+    width: 65%;
+    outline: none;
+    background: none;
+    color: var(--lm-text);
+    font-size: 18px;
+}
+
+#input::placeholder{
+    color: var(--lm-text);
+    letter-spacing: -0.5px;
+    font-size: 18px;
+}
+
+.input-container img{
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+}
+
+.btn-search{
+    min-width: 84px;
+    padding: 14px 28px;
+    background-color: var(--btn);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-search:hover{
+    cursor: pointer;
+    background-color: var(--btn-hover);
+}
+
+.btn-search:active{
+    transform: scale(0.975);
+}
+
+.error{
+    position: absolute;
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+    right: -20px;
+    top: -45px;
+    background-color: var(--lm-bg-content);
+    border-radius: 10px;
+    padding: 4px 6px;
+    box-shadow: var(--lm-shadow);
+}
+
+.profile-container{
+    background-color: var(--lm-bg-content);
+    border-radius: 15px;
+    box-shadow: var(--lm-shadow);
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 25% 75%;
+
+}
+
+.avatar{
+    width: 117px;
+    height: 117px;
+    border-radius: 90px;
+}
+
+.profile-content{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.name-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#name{
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--lm-text-alt);
+}
+
+#date{
+    font-size: 15px;
+}
+
+#user{
+    color: var(--btn);
+    font-size: 16px;
+}
+
+.bio{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 70%;
+    line-height: 25px;
+    opacity: 0.75;
+    font-size: 15px;
+}
+
+.profile-stats-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--lm-bg);
+    text-align: center;
+    border-radius: 10px;
+    padding: 18px 32px;
+    margin: 20px 0;
+}
+
+.profile-stat{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+    text-align: start;
+    font-size: 13px;
+}
+
+.stat-value{
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--lm-text-alt);
+}
+
+.profile-bottom-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px 0;
+}
+
+.profile-info{
+    width: 47.5%;
+    font-size: 15px;
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    width: 20px;
+    filter: var(--lm-icon-bg);
+}
+
+.profile-info p{
+    overflow-wrap: break-word;
+}
+
+.profile-info a{
+    color: var(--lm-text);
+    word-break: break-all;
+}
+
+
